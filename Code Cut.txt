@@ -1,0 +1,37 @@
+def New_User(self):
+        global users1,pwd1
+        users1 = []
+        pwd1 =[]   
+        
+    def validation(name):
+        while True:
+            Username = input("Enter Username: ")
+            if Username in users1:
+                print("Username Exists. Try something new!")
+                continue
+            users1.append(Username)
+            # mu.validate()
+
+    # def validate(self):
+    #     while True:
+    #         password = input("Enter Password: ")
+    #         if len(password) < 8:
+    #             print("Make sure your password is at lest 8 letters")
+    #         elif re.search('[0-9]',password) is None:
+    #             print("Make sure your password has a number in it")
+    #         elif re.search('[A-Z]',password) is None: 
+    #             print("Make sure your password has a capital letter in it")
+    #         else:
+    #             print("Your password seems fine")
+    #             break
+            Password = input("Enter password: ")
+            pwd1.append(Password)
+            print("User generation successful")  
+            if((users1 in users1) and (pwd1 in password)):
+                print("Already registered")
+                True
+            else:
+                from log import Login
+                l=Login()
+                l.login()
+                
